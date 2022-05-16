@@ -10,3 +10,107 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body,html{
+    height: 100%;
+    font-family: 'Just Another Hand', cursive;
+    background: rgb(49,11,52);
+    background: linear-gradient(164deg, rgba(49,11,52,1) 15%, rgba(88,20,95,1) 61%, rgba(138,90,173,1) 100%, rgba(211,156,251,1) 100%);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    height: 500px;
+    width: 700px;
+    margin: 20px auto;
+    color:rgba(240, 248, 255, 0.486);
+    padding: 0%;
+}
+
+input {
+    border-style: none;
+    background: rgba(211, 156, 251, 0.39);
+    outline:none;
+    font-size: 25px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.listTask{
+    border-radius: 2px;
+    background:rgba(52, 21, 96, 0.295);
+    font-size: 20px;
+    text-align: center;
+}
+
+.leftcontainer{
+    background-color: rgba(39, 16, 71, 0.849) ;
+    width: 50%;
+    padding-top: 70px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.432);
+}
+
+.rightcontainer {
+    width: 50%;
+    overflow-y: scroll;
+}
+
+.rightcontainer::-webkit-scrollbar{
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    overflow-y: scroll;
+}
+
+.otherside { 
+    padding: 10px;
+    display: flex;
+}
+
+@-webkit-keyframes moving{
+    from{
+        background: rgb(93, 38, 172)
+    }
+    to{
+        background: rgb(148, 86, 235)
+    }
+}
+
+
+@-moz-keyframes moving{
+    from{
+        background: rgb(93, 38, 172)
+    }
+    to{
+        background: rgb(148, 86, 235)
+    }
+}
+.button1 {
+    background: rgb(93, 38, 172);
+    border-radius: 3px;
+    border: none;
+    color: rgb(67, 27, 124);
+    padding: 2px;
+}
+ 
+.button1:hover {
+    background: rgb(148, 86, 235);
+    color: rgb(93, 38, 172);
+    animation-name: moving;
+    animation-duration: 3s;
+}
+
+.button2 {
+    background: rgb(93, 38, 172);
+    border-radius: 3px;
+    border: none;
+    color: rgb(67, 27, 124);
+    padding: 2px;
+}
+ 
+.button2:hover {
+    background: rgb(148, 86, 235);
+    color: rgb(93, 38, 172);
+    animation: moving;
+    animation-duration: 3s;
+}
+
